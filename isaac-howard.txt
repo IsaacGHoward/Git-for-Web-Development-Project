@@ -73,10 +73,19 @@ Every time a feature is added
 git push 
     37. Walk me through Lambda's git flow. 
 First fork the project to your repos, then add your TL as a collaborator. Next, clone the repo to your local drive. Before editing, create a new branch 'firstname-lastname', now you can do all your work on this branch. While working, make commits whenever you get a new feature or important change, and push this when you are done, to that branch you created. Once done, go to github and make a pull request. It should be a request to merge your named branch to your main branch. Make sure it is the main branch of your forked repo, not the original repo. Before making this request add your TL to the "reviewers" option, and they will merge the pull request once they have reviewed your code and deemed it good for a merge.
+----------------------------------------------------------------------------------
 Stretch Questions
-
+----------------------------------------------------------------------------------
     1. What is the difference between an inline element and a block element?
+An inline element can go inside a block element, but not the other way around. Inline elements do not affect formatting in the way that block elements do, which is by typically sectioning off the content with a line break.
     2. What happens when an element is positioned absolutely? 
+It is positioned relative to it's nearest parent that is positioned. If this does not exist it will use the document body.
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+position: relative 
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+
+display block: <p>, <header>, <address> 
+display inline: <a>, <button>  
+display inline-block: <img> 
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+The box model is a model of how HTML elements are affected by styling. Each section of the box model is affected by different CSS styling. First there is the content, then spacing between that and the border, called padding, and then the boreder, and then space between the border and the parent, called margin. If an element doesn't follow the box model rules, you can modify it with display:inline so it will follow the box model and respect the width it has been given. 
